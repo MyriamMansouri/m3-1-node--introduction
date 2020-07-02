@@ -16,7 +16,7 @@ const updateConversation = (message) => {
   if (author === "user") {
     messageInput.value = "";
   }
-
+  handleFocus();
   conversationElem.scrollTop = conversationElem.scrollHeight;
 };
 const sendMessage = (event) => {
